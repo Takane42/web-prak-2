@@ -23,10 +23,10 @@ echo "<h1>Data Wisata</h1>
 $data = json_decode($send, true);
 
 foreach ($data as $row) {
-    echo "<tr>";
-    echo "<td>" . $row['kota'] . "</td>";
-    echo "<td>" . $row['landmark'] . "</td>";
-    echo "<td>" . $row['tarif'] . "</td>";
-    echo "</tr>";
+    echo "<tr>
+        <td>" . $row['kota'] . "</td>
+        <td>" . $row['landmark'] . "</td>
+        <td>" . $row['tarif'] . "</td>
+        </tr>";
 }
 ?>
